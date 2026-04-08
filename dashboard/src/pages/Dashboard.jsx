@@ -4,24 +4,20 @@ import PRList from "../components/PRList.jsx";
 import TrendChart from "../components/TrendChart.jsx";
 import IssueBreakdown from "../components/IssueBreakdown.jsx";
 import {
-  MOCK_METRICS, MOCK_PRS, MOCK_TREND,
+  MOCK_METRICS, MOCK_PRS, MOCK_TREND, useMetrics, usePRs, useTrend,
 } from "../hooks/useApi.js";
 import styles from "./Dashboard.module.css";
 
 // Toggle this to false to use the real API hooks
-const USE_MOCK = true;
+const USE_MOCK = false;
 
 export default function Dashboard() {
   const [days, setDays] = useState(30);
 
-  // In production, swap these with the real hooks:
-  // const { data: metrics, loading: mLoading } = useMetrics(null, days);
-  // const { data: prs, loading: pLoading } = usePRs(null, 20);
-  // const { data: trend, loading: tLoading } = useTrend(null, days);
-  const metrics = MOCK_METRICS;
-  const prs = MOCK_PRS;
-  const trend = MOCK_TREND;
-  const loading = false;
+  const { data: metrics, loading: mLoading } = useMetrics(null, days);
+const { data: prs, loading: pLoading } = usePRs(null, 20);
+const { data: trend, loading: tLoading } = useTrend(null, days);
+const loading = mLoading || pLoading;
 
   return (
     <div className={styles.page}>
