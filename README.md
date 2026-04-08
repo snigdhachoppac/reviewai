@@ -1,7 +1,8 @@
 ## Demo
 
-![PR Review](docs/Screenshot 2026-04-07 at 10.46.53 PM.png)
-![Dashboard](docs/Screenshot 2026-04-07 at 10.47.00 PM.png)# ReviewAI — AI-Powered Code Review Assistant
+![PR Review](docs/pr-review.png)
+
+![Dashboard](docs/dashboard.png)
 
 > Intelligent pull request reviews powered by Claude. Goes beyond linting to understand context, flag security vulnerabilities, suggest architectural improvements, and track code quality over time.
 
