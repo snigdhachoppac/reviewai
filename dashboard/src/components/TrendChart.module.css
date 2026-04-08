@@ -1,0 +1,52 @@
+.wrap { width: 100%; }
+
+.skeleton {
+  height: 160px;
+  border-radius: var(--r-md);
+  background: var(--bg-elevated);
+  animation: pulse 1.5s ease infinite;
+}
+
+.tooltip {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-sm);
+  padding: 8px 12px;
+}
+
+.ttDate { font-size: 10px; color: var(--text-muted); margin-bottom: 4px; }
+.ttScore { font-size: 15px; font-weight: 600; color: var(--green); }
+.ttPrs { font-size: 11px; color: var(--text-secondary); }
+
+.legend {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.lineGreen {
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  background: var(--green);
+  border-radius: 1px;
+}
+
+.lineDashed {
+  display: inline-block;
+  width: 16px;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--text-muted) 0, var(--text-muted) 4px,
+    transparent 4px, transparent 6px
+  );
+}

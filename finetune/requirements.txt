@@ -1,0 +1,10 @@
+torch>=2.1.0
+transformers>=4.40.0
+peft>=0.10.0
+trl>=0.8.0
+accelerate>=0.28.0
+bitsandbytes>=0.43.0   # 4-bit quantisation support
+datasets>=2.18.0
+wandb>=0.16.0           # Experiment tracking (optional but recommended)
+sentencepiece           # Required for some tokenizers
+einops                  # Required by some model architectures

@@ -1,0 +1,32 @@
+.wrap { display: flex; flex-direction: column; gap: 14px; }
+
+.skeleton {
+  height: 120px;
+  border-radius: var(--r-md);
+  background: var(--bg-elevated);
+  animation: pulse 1.5s ease infinite;
+}
+
+.row { display: flex; flex-direction: column; gap: 5px; }
+
+.labelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label { font-size: 12px; color: var(--text-secondary); }
+.count { font-size: 12px; font-weight: 500; color: var(--text-primary); font-family: var(--font-mono); }
+
+.track {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--bg-elevated);
+  overflow: hidden;
+}
+
+.fill {
+  height: 4px;
+  border-radius: 2px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}

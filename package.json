@@ -1,0 +1,13 @@
+{
+  "name": "reviewai",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["github-app", "dashboard"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=github-app\" \"npm run dev --workspace=dashboard\"",
+    "build": "npm run build --workspace=github-app && npm run build --workspace=dashboard"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
