@@ -1,3 +1,7 @@
+<p>
+  <a href="https://reviewai-dashboard.vercel.app">Live Demo</a> •
+  <a href="https://github.com/snigdhachoppac/reviewai">Code</a>
+</p>
 ## Demo
 
 ![PR Review](docs/pr-review.png)
